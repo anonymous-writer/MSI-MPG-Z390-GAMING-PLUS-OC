@@ -22,9 +22,15 @@
 			</dict>
 			<dict>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-LPC.aml</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RTC0.aml</string>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -36,7 +42,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-SMBUS.aml</string>
+				<string>SSDT-SBUS-MCHC.aml</string>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -61,6 +67,18 @@
 				<false/>
 				<key>Path</key>
 				<string>ssdt.aml</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-AWAC.aml</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EHCx_OFF.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -488,9 +506,19 @@
 				<key>BundlePath</key>
 				<string>IntelMausiEthernet.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausiEthernet</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>IntelMausi.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelMausi</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -681,19 +709,19 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string></string>
+			<string>ForceGraphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string></string>
+			<string>ForceText</string>
 			<key>ConsoleMode</key>
-			<string></string>
+			<string>Max</string>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideSelf</key>
-			<true/>
+			<false/>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>Resolution</key>
-			<string>1920x1080</string>
+			<string>1920x1080@32</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
@@ -900,24 +928,26 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG8YNJV3Q</string>
+			<string>C02ZR0YYJV3Q</string>
 			<key>SystemUUID</key>
-			<string>4B97DF44-6036-4DFF-9853-F436A6726AAA</string>
+			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02912100CDLNV9JA</string>
+			<string>C02948609GULNV98C</string>
 			<key>ROM</key>
-			<string>ECD83433EC09</string>
+			<data>
+			ANhhdUQQ
+			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG8YNJV3Q</string>
+			<string>C02ZR0YYJV3Q</string>
 			<key>SystemUUID</key>
-			<string>4B97DF44-6036-4DFF-9853-F436A6726AAA</string>
+			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -926,9 +956,11 @@
 			<key>FirmwareFeaturesMask</key>
 			<string>7FFFDFFF 00000000</string>
 			<key>MLB</key>
-			<string>C02912100CDLNV9JA</string>
+			<string>C02948609GULNV98C</string>
 			<key>ROM</key>
-			<string>ECD83433EC09</string>
+			<data>
+			ANhhdUQQ
+			</data>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -947,7 +979,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>BoardSerialNumber</key>
-			<string>C02912100CDLNV9JA</string>
+			<string>C02915501J9LNV98C</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -957,7 +989,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02YG8YNJV3Q</string>
+			<string>C02YKKY5JV3Q</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -984,9 +1016,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG8YNJV3Q</string>
+			<string>C02ZR0YYJV3Q</string>
 			<key>SystemUUID</key>
-			<string>4B97DF44-6036-4DFF-9853-F436A6726AAA</string>
+			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
