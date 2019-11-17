@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#Laptop Type</key>
+	<key>#Motherboard Type</key>
 	<string>MSI MPG Z390 GAMING PLUS</string>
 	<key>ACPI</key>
 	<dict>
@@ -124,87 +124,127 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change XHCI to XHC</string>
+				<string>change _DSM to XDSM</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				WEhDSQ==
+				X0RTTQ==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
 				</data>
 				<key>Replace</key>
 				<data>
-				WEhDXw==
+				WERTTQ==
 				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>change SAT0 to SATA</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
 				U0FUMA==
 				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
+				</data>
 				<key>Replace</key>
 				<data>
 				U0FUQQ==
 				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fix 300-series RTC Bug</string>
+				<string>change HDAS to HDEF</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				oAqTU1RBUwE=
+				SERBUw==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
 				</data>
 				<key>Replace</key>
 				<data>
-				oAqRCv8L//8=
+				SERFRg==
 				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change HECI to IMEI</string>
+				<string>change PEGP to GFX0</string>
+				<key>Count</key>
+				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				SEVDSQ==
+				UEVHUA==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>OemTableId</key>
+				<data>
 				</data>
 				<key>Replace</key>
 				<data>
-				SU1FSQ==
+				R0ZYMA==
 				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change _OSI to XOSI</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
+				<key>ReplaceMask</key>
 				<data>
-				X09TSQ==
 				</data>
-				<key>Replace</key>
-				<data>
-				WE9TSQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				X1BUUwE=
-				</data>
-				<key>Replace</key>
-				<data>
-				WlBUUwE=
-				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -430,13 +470,6 @@
 				<string>Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model</string>
 			</dict>
 		</dict>
-		<key>Block</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<array>
-				<string>MaximumBootBeepVolume</string>
-			</array>
-		</dict>
 	</dict>
 	<key>Kernel</key>
 	<dict>
@@ -534,140 +567,67 @@
 		<key>Block</key>
 		<array>
 			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, </string>
 				<key>Enabled</key>
 				<false/>
 				<key>Identifier</key>
-				<string>AppleIntelLpssI2CController</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers,</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>AppleIntelLpssI2C</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>com.apple.driver.AppleSMCLMU</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleSMCLMU</string>
+				<string>com.apple.driver.AppleTyMCEDriver</string>
 			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				dS4Ptg==
-				</data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleRTC</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				6y4Ptg==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				dTMPtw==
-				</data>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleRTC</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>MaxKernel</key>
-				<string>18.5.0</string>
-				<key>MinKernel</key>
-				<string>18.5.0</string>
-				<key>Replace</key>
-				<data>
-				6zMPtw==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string>_AcpiOsVprintf</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>com.apple.driver.AppleACPIPlatform</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>MaxKernel</key>
-				<string>18.5.0</string>
-				<key>MinKernel</key>
-				<string>18.5.0</string>
-				<key>Replace</key>
-				<data>
-				ww==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
 				<key>Comment</key>
-				<string>Broadcom BCM57785 patch</string>
+				<string>Catalina Port Limit Patrch 01</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				6AAA//9miYMABQAA
+				g/sPDw==
 				</data>
 				<key>Identifier</key>
-				<string>com.apple.iokit.AppleBCM5701Ethernet</string>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				/wAA////////////
 				</data>
 				<key>Replace</key>
 				<data>
-				uLQWAABmiYMABQAA
+				g/s/Dw==
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Catalina Port Limit Patrch 02</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/kPDw==
+				</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				</data>
+				<key>MaxKernel</key>
+				<string>18.5.0</string>
+				<key>MinKernel</key>
+				<string>18.5.0</string>
+				<key>Replace</key>
+				<data>
+				g/k/Dw==
 				</data>
 				<key>ReplaceMask</key>
 				<data>
@@ -681,7 +641,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
@@ -704,8 +664,6 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
-		<key>BlessOverride</key>
-		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
@@ -725,14 +683,12 @@
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>15</integer>
 			<key>UsePicker</key>
 			<true/>
 		</dict>
 		<key>Debug</key>
 		<dict>
-			<key>####Target</key>
-			<integer>75</integer>
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>DisplayDelay</key>
@@ -743,6 +699,44 @@
 			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Not signed for security reasons</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Name</key>
+				<string>CustomOS</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Windows 10</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Windows 10</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0xFFFF,0x0)/HD(1,GPT,0c035fac-7718-4d48-859e-780c5fa9875e,0x800,0xfa000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+			</dict>
+		</array>
+		<key>Security</key>
+		<dict>
+			<key>AllowNvramReset</key>
+			<true/>
+			<key>ExposeSensitiveData</key>
+			<integer>3</integer>
+			<key>HaltLevel</key>
+			<integer>2147483648</integer>
+			<key>RequireSignature</key>
+			<false/>
+			<key>RequireVault</key>
+			<false/>
+			<key>ScanPolicy</key>
+			<integer>0</integer>
+		</dict>
+		<key>Tools</key>
 		<array>
 			<dict>
 				<key>Arguments</key>
@@ -767,60 +761,6 @@
 				<string>PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0xFFFF,0x0)/HD(1,GPT,0c035fac-7718-4d48-859e-780c5fa9875e,0x800,0xfa000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			</dict>
 		</array>
-		<key>Security</key>
-		<dict>
-			<key>AllowNvramReset</key>
-			<false/>
-			<key>ExposeSensitiveData</key>
-			<integer>3</integer>
-			<key>HaltLevel</key>
-			<integer>2147483648</integer>
-			<key>RequireSignature</key>
-			<false/>
-			<key>RequireVault</key>
-			<false/>
-			<key>ScanPolicy</key>
-			<integer>983299</integer>
-		</dict>
-		<key>Tools</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>UEFI Shell</string>
-				<key>Path</key>
-				<string>Shell.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>CleanNvram</string>
-				<key>Path</key>
-				<string>CleanNvram.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>Screenshot LCtrl + LAlt + F12</string>
-				<key>Path</key>
-				<string>CrScreenshotDxe.efi</string>
-			</dict>
-		</array>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -836,21 +776,14 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v dart=0 slide=255</string>
-				<key>bootercfg</key>
-				<string>log=0 debug=0 level=0</string>
-				<key>bootercfg-once</key>
-				<string>log=0 debug=0 level=0</string>
+				<string>dart=0 slide=255</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
 				</data>
 				<key>nvda_drv</key>
 				<data>
-				MQ==
 				</data>
-				<key>prev-lang:kbd</key>
-				<string>DE:3</string>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -861,7 +794,7 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
-				<string>boot-args</string>
+				<string>boot-arg</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -881,6 +814,7 @@
 				<string>fmm-computer-name</string>
 				<string>nvda_drv</string>
 				<string>prev-lang:kbd</string>
+				<string>security-mode</string>
 			</array>
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
@@ -895,59 +829,28 @@
 	<key>PlatformInfo</key>
 	<dict>
 		<key>Automatic</key>
-		<false/>
+		<true/>
 		<key>DataHub</key>
 		<dict>
-			<key>ARTFrequency</key>
-			<integer>0</integer>
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
-			<key>BoardRevision</key>
-			<data>
-			</data>
-			<key>DevicePathsSupported</key>
-			<data>
-			</data>
-			<key>FSBFrequency</key>
-			<integer>0</integer>
-			<key>InitialTSC</key>
-			<integer>0</integer>
-			<key>PlatformName</key>
-			<string></string>
-			<key>SmcBranch</key>
-			<data>
-			</data>
-			<key>SmcPlatform</key>
-			<data>
-			</data>
-			<key>SmcRevision</key>
-			<data>
-			</data>
-			<key>StartupPowerEvents</key>
-			<integer>0</integer>
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZR0YYJV3Q</string>
+			<string>C02YQ4ZQJV3Q</string>
 			<key>SystemUUID</key>
-			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
+			<string>7380EBA4-71A8-42FC-9892-7AF6C07667A2</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02948609GULNV98C</string>
-			<key>ROM</key>
-			<data>
-			ANhhdUQQ
-			</data>
-			<key>SpoofVendor</key>
-			<true/>
+			<string>C02920108J9LNV9CB</string>
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZR0YYJV3Q</string>
+			<string>C02YQ4ZQJV3Q</string>
 			<key>SystemUUID</key>
-			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
+			<string>7380EBA4-71A8-42FC-9892-7AF6C07667A2</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -956,11 +859,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<string>7FFFDFFF 00000000</string>
 			<key>MLB</key>
-			<string>C02948609GULNV98C</string>
-			<key>ROM</key>
-			<data>
-			ANhhdUQQ
-			</data>
+			<string>C02920108J9LNV9CB</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -979,7 +878,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>BoardSerialNumber</key>
-			<string>C02915501J9LNV98C</string>
+			<string>C02920108J9LNV9CB</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -989,7 +888,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02YKKY5JV3Q</string>
+			<string>C02YQ4ZQJV3Q</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -1004,9 +903,6 @@
 			<integer>34</integer>
 			<key>ProcessorType</key>
 			<integer>0</integer>
-			<key>SmcVersion</key>
-			<data>
-			</data>
 			<key>SystemFamily</key>
 			<string>iMac</string>
 			<key>SystemManufacturer</key>
@@ -1016,9 +912,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZR0YYJV3Q</string>
+			<string>C02YQ4ZQJV3Q</string>
 			<key>SystemUUID</key>
-			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
+			<string>7380EBA4-71A8-42FC-9892-7AF6C07667A2</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -1049,7 +945,7 @@
 			<key>KeyMergeThreshold</key>
 			<integer>2</integer>
 			<key>KeySupport</key>
-			<true/>
+			<false/>
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>
@@ -1057,7 +953,7 @@
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
-			<string>ASUS</string>
+			<string></string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
@@ -1074,7 +970,7 @@
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
-			<false/>
+			<true/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
