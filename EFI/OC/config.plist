@@ -598,7 +598,7 @@
 			<key>ConsoleBehaviourOs</key>
 			<string>ForceGraphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string>ForceText</string>
+			<string>ForceGraphics</string>
 			<key>ConsoleMode</key>
 			<string>Max</string>
 			<key>HibernateMode</key>
@@ -618,6 +618,8 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>#Ausgabe-in-Datei-mit Debug-OV-Version#Target</key>
+			<integer>67</integer>
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>DisplayDelay</key>
