@@ -1011,7 +1011,7 @@
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>SanitiseClearScreen</key>
-			<false/>
+			<true/>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
