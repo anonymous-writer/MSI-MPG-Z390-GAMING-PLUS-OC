@@ -833,93 +833,22 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
-		<key>DataHub</key>
-		<dict>
-			<key>BoardProduct</key>
-			<string>Mac-AA95B1DDAB278B95</string>
-			<key>SystemProductName</key>
-			<string>iMac19,1</string>
-			<key>SystemSerialNumber</key>
-			<string>C02YCUZHJV3Q</string>
-			<key>SystemUUID</key>
-			<string>3527169E-27B4-49F6-82B7-3B042246D8AC</string>
-		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02909104QXLNV91H</string>
+			<string>C02913130CDLNV91F</string>
+			<key>ROM</key>
+			<data>
+			mumpsWyL
+			</data>
+			<key>SpoofVendor</key>
+			<true/>
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YCUZHJV3Q</string>
+			<string>C02YH2YKJV3Q</string>
 			<key>SystemUUID</key>
-			<string>3527169E-27B4-49F6-82B7-3B042246D8AC</string>
-		</dict>
-		<key>PlatformNVRAM</key>
-		<dict>
-			<key>FirmwareFeatures</key>
-			<string>76F58FFD 00000000</string>
-			<key>FirmwareFeaturesMask</key>
-			<string>7FFFDFFF 00000000</string>
-			<key>MLB</key>
-			<string>C02909104QXLNV91H</string>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>10/09/2019</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>1037.40.118.0.0</string>
-			<key>BoardAssetTag</key>
-			<string></string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>Mac-AA95B1DDAB278B95</string>
-			<key>BoardSerialNumber</key>
-			<string>C02909104QXLNV91H</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>1.0</string>
-			<key>ChassisAssetTag</key>
-			<string>iMac-Aluminum</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>C02YCUZHJV3Q</string>
-			<key>ChassisType</key>
-			<integer>9</integer>
-			<key>ChassisVersion</key>
-			<string>Mac-AA95B1DDAB278B95</string>
-			<key>FirmwareFeatures</key>
-			<string>76F58FFD 00000000</string>
-			<key>FirmwareFeaturesMask</key>
-			<string>7FFFDFFF 00000000</string>
-			<key>MemoryFormFactor</key>
-			<string></string>
-			<key>PlatformFeature</key>
-			<integer>34</integer>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>SystemFamily</key>
-			<string>iMac</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>iMac19,1</string>
-			<key>SystemSKUNumber</key>
-			<string>Mac-AA95B1DDAB278B95</string>
-			<key>SystemSerialNumber</key>
-			<string>C02YCUZHJV3Q</string>
-			<key>SystemUUID</key>
-			<string>3527169E-27B4-49F6-82B7-3B042246D8AC</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
+			<string>4FA2D9B4-D7EC-401B-919F-4528C3EB9B03</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
