@@ -114,13 +114,13 @@
 						DAAAAA==
 						</data>
 					</dict>
-					<key>HS14</key>
+					<key>HS13</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
 						<data>
-						DgAAAA==
+						DQAAAA==
 						</data>
 					</dict>
 					<key>SS01</key>
@@ -171,7 +171,7 @@
 					<key>USR2</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>255</integer>
 						<key>port</key>
 						<data>
 						EAAAAA==
