@@ -697,7 +697,7 @@
 				<key>Comment</key>
 				<string>Windows 10</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Hidden</key>
 				<false/>
 				<key>Name</key>
@@ -711,7 +711,7 @@
 				<key>Comment</key>
 				<string>OSX Catalina</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Hidden</key>
 				<false/>
 				<key>Name</key>
@@ -725,9 +725,9 @@
 				<key>Comment</key>
 				<string>OSX Catalina Beta Installationen</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Hidden</key>
-				<true/>
+				<false/>
 				<key>Name</key>
 				<string>OSX Catalina Beta Installationen</string>
 				<key>Path</key>
