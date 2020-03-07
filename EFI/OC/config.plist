@@ -255,6 +255,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>#EnableForAll</key>
+			<false/>
 			<key>FadtEnableReset</key>
 			<false/>
 			<key>NormalizeHeaders</key>
@@ -664,13 +666,17 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
+			<key>HideAuxiliary</key>
+			<true/>
 			<key>HideSelf</key>
 			<true/>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
-			<key>PollAppleHotKeys</key>
+			<key>PickerAudioAssist</key>
 			<false/>
+			<key>PollAppleHotKeys</key>
+			<true/>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
@@ -681,7 +687,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
@@ -698,8 +704,6 @@
 				<string>Windows 10</string>
 				<key>Enabled</key>
 				<false/>
-				<key>Hidden</key>
-				<false/>
 				<key>Name</key>
 				<string>Windows 10</string>
 				<key>Path</key>
@@ -712,8 +716,6 @@
 				<string>OSX Catalina</string>
 				<key>Enabled</key>
 				<false/>
-				<key>Hidden</key>
-				<false/>
 				<key>Name</key>
 				<string>OSX Catalina</string>
 				<key>Path</key>
@@ -725,8 +727,6 @@
 				<key>Comment</key>
 				<string>OSX Catalina Beta Installationen</string>
 				<key>Enabled</key>
-				<false/>
-				<key>Hidden</key>
 				<false/>
 				<key>Name</key>
 				<string>OSX Catalina Beta Installationen</string>
@@ -743,13 +743,13 @@
 			<key>AuthRestart</key>
 			<true/>
 			<key>ExposeSensitiveData</key>
-			<integer>6</integer>
+			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 			<key>ScanPolicy</key>
-			<integer>983299</integer>
+			<integer>525571</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -810,6 +810,8 @@
 				<data>MQ==</data>
 				<key>prev-lang:kbd</key>
 				<data>cnUtUlU6MjUy</data>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -891,11 +893,29 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>AppleImageLoader.efi</string>
-			<string>VBoxHfs.efi</string>
+			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
+			<string>AudioDxe.efi</string>
+			<string>NdkBootPicker.efi</string>
 		</array>
+		<key>Audio</key>
+		<dict>
+			<key>AudioSupport</key>
+			<true/>
+			<key>AudioDevice</key>
+			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
+			<key>AudioCodec</key>
+			<integer>0</integer>
+			<key>AudioOut</key>
+			<integer>0</integer>
+			<key>MinimumVolume</key>
+			<integer>20</integer>
+			<key>PlayChime</key>
+			<true/>
+			<key>VolumeAmplifier</key>
+			<integer>0</integer>
+		</dict>
 		<key>Input</key>
 		<dict>
 			<key>KeyForgetThreshold</key>
@@ -937,11 +957,11 @@
 			<false/>
 			<key>SanitiseClearScreen</key>
 			<false/>
-			<key>Scale</key>
-			<integer>100</integer>
 		</dict>
 		<key>Protocols</key>
 		<dict>
+			<key>AppleAudio</key>
+			<false/>
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleEvent</key>
