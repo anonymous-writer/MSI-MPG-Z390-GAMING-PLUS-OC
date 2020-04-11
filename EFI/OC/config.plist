@@ -650,7 +650,7 @@
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
-			<false/>
+			<true/>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -739,7 +739,7 @@
 			<key>AllowNvramReset</key>
 			<true/>
 			<key>AllowSetDefault</key>
-			<false/>
+			<true/>
 			<key>AuthRestart</key>
 			<true/>
 			<key>ExposeSensitiveData</key>
@@ -749,7 +749,7 @@
 			<key>Vault</key>
 			<string>Optional</string>
 			<key>ScanPolicy</key>
-			<integer>525571</integer>
+			<integer>3081475</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -787,7 +787,7 @@
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
-				<string>Shell.efi</string>
+				<string>OpenShell.efi</string>
 			</dict>
 		</array>
 	</dict>
@@ -861,6 +861,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>UpdateDataHub</key>
+		<true/>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
@@ -878,8 +880,6 @@
 			<key>SystemUUID</key>
 			<string>DFF052CE-F94D-4287-AB3D-C4C0F3305C65</string>
 		</dict>
-		<key>UpdateDataHub</key>
-		<true/>
 		<key>UpdateNVRAM</key>
 		<true/>
 		<key>UpdateSMBIOS</key>
@@ -895,7 +895,7 @@
 		<array>
 			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
-			<string>FwRuntimeServices.efi</string>
+			<string>OpenRuntime.efi</string>
 			<string>AudioDxe.efi</string>
 			<string>NdkBootPicker.efi</string>
 		</array>
