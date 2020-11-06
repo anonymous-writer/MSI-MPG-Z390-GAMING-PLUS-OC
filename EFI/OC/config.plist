@@ -754,29 +754,29 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
-		<key>CustomMemory</key>
-		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02948609GULNV98C</string>
+			<string>C02719104J9JG36FB</string>
 			<key>ProcessorType</key>
-			<integer>1801</integer>
-			<key>ROM</key>
-			<data>ANhhdUQQ</data>
-			<key>SpoofVendor</key>
-			<true/>
+			<integer>3841</integer>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
+			<key>ROM</key>
+			<data></data>
+			<key>SpoofVendor</key>
+			<false/>
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02T3SZWHX87</string>
+			<string>C02TP01DHX87</string>
 			<key>SystemUUID</key>
-			<string>15C3DC70-EC50-4035-A772-2FD11E1C9FE3</string>
+			<string>F254C1E7-16D0-4128-B24B-5F9E920433B0</string>
 		</dict>
+		<key>CustomMemory</key>
+		<false/>
 		<key>UpdateDataHub</key>
 		<true/>
 		<key>UpdateNVRAM</key>
