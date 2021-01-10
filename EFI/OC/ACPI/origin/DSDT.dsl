@@ -1,11 +1,11 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20190509 (64-bit version)
- * Copyright (c) 2000 - 2019 Intel Corporation
+ * AML/ASL+ Disassembler version 20201113 (64-bit version)
+ * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLyQtiSB.aml, Thu Oct 31 12:25:20 2019
+ * Disassembly of /Volumes/OPENCORE/EFI/OC/ACPI/origin/DSDT.aml, Mon Jan  4 10:06:00 2021
  *
  * Original Table Header:
  *     Signature        "DSDT"
@@ -496,6 +496,9 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         LPER,   8, 
         PPSZ,   32, 
         DISE,   8, 
+        BGMA,   64, 
+        BGMS,   8, 
+        BGIA,   16, 
         IRMC,   8, 
         CHEN,   8, 
         S0ID,   8, 
@@ -1453,6 +1456,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         WDC2,   16, 
         WMXS,   16, 
         WMNS,   16, 
+        ESPC,   8, 
         UCRT,   8, 
         TJMX,   8, 
         STAS,   8, 
@@ -6235,6 +6239,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -6510,6 +6518,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -6785,6 +6797,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -7060,6 +7076,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -7335,6 +7355,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -7610,6 +7634,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -7885,6 +7913,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -8160,6 +8192,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -8435,6 +8471,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -8710,6 +8750,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -8985,6 +9029,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -9260,6 +9308,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -9535,6 +9587,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -9810,6 +9866,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -10085,6 +10145,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -10360,6 +10424,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -10635,6 +10703,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -10910,7 +10982,11 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
-                 }
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
+                }
 
                 Method (HPME, 0, Serialized)
                 {
@@ -11185,6 +11261,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -11460,6 +11540,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -11735,6 +11819,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -12010,6 +12098,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -12285,6 +12377,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -12560,6 +12656,10 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 Device (PXSX)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
+                    Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                    {
+                        Return (GPRW (0x69, 0x04))
+                    }
                 }
 
                 Method (HPME, 0, Serialized)
@@ -14781,6 +14881,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         VM70,   8, 
         VM75,   8, 
         PTHM,   8, 
+        PSON,   8, 
         TWMB,   32, 
         LTR1,   8, 
         LTR2,   8, 
@@ -16909,7 +17010,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (CUID, 1, Serialized)
             {
-                If ((Arg0 == ToUUID ("7c9512a9-1705-4cb4-af7d-506a2423ab71")))
+                If ((Arg0 == ToUUID ("7c9512a9-1705-4cb4-af7d-506a2423ab71") /* Unknown UUID */))
                 {
                     Return (One)
                 }
@@ -17196,7 +17297,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
                 }
 
-                If ((Arg0 == ToUUID ("732b85d5-b7a7-4a1b-9ba0-4bbd00ffd511")))
+                If ((Arg0 == ToUUID ("732b85d5-b7a7-4a1b-9ba0-4bbd00ffd511") /* Unknown UUID */))
                 {
                     If ((Arg1 == One))
                     {
@@ -17559,7 +17660,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
                 }
 
-                If ((Arg0 == ToUUID ("a69f886e-6ceb-4594-a41f-7b5dce24c553")))
+                If ((Arg0 == ToUUID ("a69f886e-6ceb-4594-a41f-7b5dce24c553") /* Unknown UUID */))
                 {
                     Switch (ToInteger (Arg2))
                     {
@@ -17682,7 +17783,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         }
                     }, 
 
-                    ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                    ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                     Package (0x04)
                     {
                         Package (0x02)
@@ -18008,7 +18109,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 {
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
                 }
-                ElseIf ((Arg0 == ToUUID ("9cd9cddd-8845-4afd-8392-31c4eb87cabd")))
+                ElseIf ((Arg0 == ToUUID ("9cd9cddd-8845-4afd-8392-31c4eb87cabd") /* Unknown UUID */))
                 {
                     Return (D3AS (Arg1, Arg2, Arg3))
                 }
@@ -19497,7 +19598,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (RSTD, 5, Serialized)
             {
-                If ((Arg0 == ToUUID ("e03e3431-e510-4fa2-abc0-2d7e901245fe")))
+                If ((Arg0 == ToUUID ("e03e3431-e510-4fa2-abc0-2d7e901245fe") /* Unknown UUID */))
                 {
                     Switch (ToInteger (Arg2))
                     {
@@ -21017,7 +21118,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 }
 
                 ADBG (Concatenate ("EMH4=", ToDecimalString (EMH4)))
-                If ((Arg0 == ToUUID ("f6c13ea5-65cd-461f-ab7a-29f7e8d5bd61")))
+                If ((Arg0 == ToUUID ("f6c13ea5-65cd-461f-ab7a-29f7e8d5bd61") /* Unknown UUID */))
                 {
                     If ((Arg1 >= Zero))
                     {
@@ -21213,7 +21314,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     Return (PCID (Arg0, Arg1, Arg2, Arg3))
                 }
 
-                If ((Arg0 == ToUUID ("f6c13ea5-65cd-461f-ab7a-29f7e8d5bd61")))
+                If ((Arg0 == ToUUID ("f6c13ea5-65cd-461f-ab7a-29f7e8d5bd61") /* Unknown UUID */))
                 {
                     If ((Arg1 >= Zero))
                     {
@@ -21361,7 +21462,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                 {
                     Switch (ToInteger (Arg2))
                     {
@@ -22467,7 +22568,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37")))
+                If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37") /* Unknown UUID */))
                 {
                     If ((ToInteger (Arg1) >= Zero))
                     {
@@ -23710,7 +23811,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("4993a436-e1ac-4dc7-b4f8-46a5008fb9e7")))
+                    If ((Arg0 == ToUUID ("4993a436-e1ac-4dc7-b4f8-46a5008fb9e7") /* Unknown UUID */))
                     {
                         If ((Arg2 == Zero))
                         {
@@ -25509,7 +25610,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -26036,7 +26137,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -26563,7 +26664,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -27090,7 +27191,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -27617,7 +27718,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -28144,7 +28245,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -28671,7 +28772,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -29198,7 +29299,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -29725,7 +29826,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -30252,7 +30353,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -30779,7 +30880,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -31306,7 +31407,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -31833,7 +31934,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -32360,7 +32461,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -32887,7 +32988,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -33414,7 +33515,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -33941,7 +34042,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -34468,7 +34569,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -34995,7 +35096,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -35522,7 +35623,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92")))
+                    If ((Arg0 == ToUUID ("079ff457-64a8-44be-bd8a-6955052b9b92") /* Unknown UUID */))
                     {
                         Switch (ToInteger (Arg2))
                         {
@@ -39241,7 +39342,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             })
             Method (_DSD, 0, NotSerialized)  // _DSD: Device-Specific Data
             {
-                Name (PSID, ToUUID ("bf60df52-56cd-454f-9a23-cb4dcfae77f8"))
+                Name (PSID, ToUUID ("bf60df52-56cd-454f-9a23-cb4dcfae77f8") /* Unknown UUID */)
                 Name (PSEN, Package (0x02)
                 {
                     "CecPsOnSwitchingEnabledInS0", 
@@ -40024,7 +40125,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
             Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
             {
                 ADBG (Concatenate ("PEPC = ", ToHexString (PEPC)))
-                If ((Arg0 == ToUUID ("c4eb40a0-6cd2-11e2-bcfd-0800200c9a66")))
+                If ((Arg0 == ToUUID ("c4eb40a0-6cd2-11e2-bcfd-0800200c9a66") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -41831,7 +41932,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f")))
+                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -41874,7 +41975,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 If ((PCHS == PCHL))
                 {
-                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11")))
+                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11") /* Unknown UUID */))
                     {
                         If ((Arg2 == Zero))
                         {
@@ -41994,7 +42095,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f")))
+                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42032,7 +42133,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 If ((PCHS == PCHL))
                 {
-                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11")))
+                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11") /* Unknown UUID */))
                     {
                         If ((Arg2 == Zero))
                         {
@@ -42153,7 +42254,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f")))
+                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42191,7 +42292,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 If ((PCHS == PCHL))
                 {
-                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11")))
+                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11") /* Unknown UUID */))
                     {
                         If ((Arg2 == Zero))
                         {
@@ -42312,7 +42413,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f")))
+                If ((Arg0 == ToUUID ("79234640-9e10-4fea-a5c1-b5aa8b19756f") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42350,7 +42451,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 If ((PCHS == PCHL))
                 {
-                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11")))
+                    If ((Arg0 == ToUUID ("82c0d13a-78c5-4244-9bb1-eb8b539a8d11") /* Unknown UUID */))
                     {
                         If ((Arg2 == Zero))
                         {
@@ -42487,7 +42588,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42518,7 +42619,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42655,7 +42756,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42686,7 +42787,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42823,7 +42924,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42854,7 +42955,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -42991,7 +43092,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43022,7 +43123,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43134,7 +43235,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           // ....
                     }, 
 
-                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a"), 
+                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a") /* Unknown UUID */, 
                     Buffer (0x10)
                     {
                         /* 0000 */  0xE1, 0x41, 0xD6, 0x16, 0xC8, 0x00, 0xC8, 0x00,  // .A......
@@ -43280,7 +43381,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43323,7 +43424,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43381,7 +43482,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     })
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43622,7 +43723,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           // ....
                     }, 
 
-                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a"), 
+                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a") /* Unknown UUID */, 
                     Buffer (0x10)
                     {
                         /* 0000 */  0xE1, 0x41, 0xD6, 0x16, 0xC8, 0x00, 0xC8, 0x00,  // .A......
@@ -43768,7 +43869,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43811,7 +43912,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -43869,7 +43970,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     })
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44110,7 +44211,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           // ....
                     }, 
 
-                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a"), 
+                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a") /* Unknown UUID */, 
                     Buffer (0x10)
                     {
                         /* 0000 */  0xE1, 0x41, 0xD6, 0x16, 0xC8, 0x00, 0xC8, 0x00,  // .A......
@@ -44256,7 +44357,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44299,7 +44400,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44357,7 +44458,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     })
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44598,7 +44699,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                         /* 0010 */  0xFF, 0xFF, 0xFF, 0xFF                           // ....
                     }, 
 
-                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a"), 
+                    ToUUID ("59af1a1f-aba4-4bb8-81ef-55938e9bc53a") /* Unknown UUID */, 
                     Buffer (0x10)
                     {
                         /* 0000 */  0xE1, 0x41, 0xD6, 0x16, 0xC8, 0x00, 0xC8, 0x00,  // .A......
@@ -44744,7 +44845,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44787,7 +44888,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }
 
-                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b")))
+                If ((Arg0 == ToUUID ("5815c5c8-c47d-477b-9a8d-76173176414b") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -44845,7 +44946,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     })
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -45126,12 +45227,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     Return ("13P2BAD33")
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == One))
                     {
@@ -45270,12 +45371,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee")))
+                If ((Arg0 == ToUUID ("822ace8f-2814-4174-a56b-5f029fe079ee") /* Unknown UUID */))
                 {
                     Return ("4SF259T2")
                 }
 
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == One))
                     {
@@ -45375,7 +45476,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
             {
-                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881")))
+                If ((Arg0 == ToUUID ("26257549-9271-4ca4-bb43-c4899d5a4881") /* Unknown UUID */))
                 {
                     If ((Arg2 == Zero))
                     {
@@ -45404,7 +45505,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Scope (_SB.PCI0)
     {
         Name (HIDG, ToUUID ("3cdff6f7-4267-4555-ad05-b30a3d8938de") /* HID I2C Device */)
-        Name (TP7G, ToUUID ("ef87eb82-f951-46da-84ec-14871ac6f84b"))
+        Name (TP7G, ToUUID ("ef87eb82-f951-46da-84ec-14871ac6f84b") /* Unknown UUID */)
         Method (HIDD, 5, Serialized)
         {
             If ((Arg0 == HIDG))
@@ -47387,7 +47488,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09")))
+                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09") /* Unknown UUID */))
                     {
                         Return (Buffer (One)
                         {
@@ -47468,7 +47569,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09")))
+                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09") /* Unknown UUID */))
                     {
                         Return (Buffer (One)
                         {
@@ -47549,7 +47650,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                 {
-                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09")))
+                    If ((Arg0 != ToUUID ("033771e0-1705-47b4-9535-d1bbe14d9a09") /* Unknown UUID */))
                     {
                         Return (Buffer (One)
                         {
@@ -48387,7 +48488,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -48539,7 +48640,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -48729,7 +48830,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -48930,7 +49031,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -49069,7 +49170,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -49234,7 +49335,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -49386,7 +49487,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -49576,7 +49677,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -49777,7 +49878,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -49916,7 +50017,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -50081,7 +50182,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -50233,7 +50334,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -50423,7 +50524,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -50624,7 +50725,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -50763,7 +50864,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -50928,7 +51029,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -51080,7 +51181,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -51270,7 +51371,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -51471,7 +51572,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -51610,7 +51711,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -51775,7 +51876,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -51927,7 +52028,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -52117,7 +52218,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -52318,7 +52419,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -52457,7 +52558,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -52622,7 +52723,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -52774,7 +52875,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -52964,7 +53065,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -53165,7 +53266,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -53304,7 +53405,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -53469,7 +53570,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -53621,7 +53722,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -53811,7 +53912,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -54012,7 +54113,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -54151,7 +54252,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -54316,7 +54417,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x11)
                 {
                     Package (0x02)
@@ -54468,7 +54569,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -54658,7 +54759,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x02)
                 {
                     Package (0x02)
@@ -54859,7 +54960,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -54998,7 +55099,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     }
                 }, 
 
-                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b"), 
+                ToUUID ("dbb8e3e6-5886-4ba6-8795-1319f52a966b") /* Hierarchical Data Extension */, 
                 Package (0x01)
                 {
                     Package (0x02)
@@ -55406,12 +55507,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     {
         Method (PPMS, 1, Serialized)
         {
-            If ((Arg0 == ToUUID ("7c708106-3aff-40fe-88be-8c999b3f7445")))
+            If ((Arg0 == ToUUID ("7c708106-3aff-40fe-88be-8c999b3f7445") /* Unknown UUID */))
             {
                 Return ((ADPM & 0x04))
             }
 
-            If ((Arg0 == ToUUID ("ec774fa9-28d3-424a-90e4-69f984f1eeb7")))
+            If ((Arg0 == ToUUID ("ec774fa9-28d3-424a-90e4-69f984f1eeb7") /* Unknown UUID */))
             {
                 Return ((ADPM & 0x0100))
             }
@@ -55444,7 +55545,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
     Method (HIDW, 4, Serialized)
     {
-        If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37")))
+        If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37") /* Unknown UUID */))
         {
             If ((Arg2 == Zero))
             {
@@ -55507,7 +55608,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
     Method (HIWC, 1, NotSerialized)
     {
-        If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37")))
+        If ((Arg0 == ToUUID ("1730e71d-e5dd-4a34-be57-4d76b6a2fe37") /* Unknown UUID */))
         {
             Return (One)
         }
@@ -56455,7 +56556,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
 
                 }
             }
-            ElseIf ((Arg0 == ToUUID ("376054ed-cc13-4675-901c-4756d7f2d45d")))
+            ElseIf ((Arg0 == ToUUID ("376054ed-cc13-4675-901c-4756d7f2d45d") /* Unknown UUID */))
             {
                 Switch (ToInteger (Arg2))
                 {
@@ -56482,12 +56583,12 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                 }
             }
 
-            If ((Arg0 == ToUUID ("cf8e16a5-c1e8-4e25-b712-4f54a96702c8")))
+            If ((Arg0 == ToUUID ("cf8e16a5-c1e8-4e25-b712-4f54a96702c8") /* Unknown UUID */))
             {
                 Return (CRYF (Arg1, Arg2, Arg3))
             }
 
-            If ((Arg0 == ToUUID ("6bbf6cab-5463-4714-b7cd-f0203c0368d4")))
+            If ((Arg0 == ToUUID ("6bbf6cab-5463-4714-b7cd-f0203c0368d4") /* Unknown UUID */))
             {
                 Return (STRT (Arg1, Arg2, Arg3))
             }
