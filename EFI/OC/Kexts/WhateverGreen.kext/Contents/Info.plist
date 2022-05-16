@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>21D49</string>
+	<string>20G527</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.5.8</string>
+	<string>1.5.9</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.5.8</string>
+	<string>1.5.9</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,8 +42,6 @@
 	<string>1321</string>
 	<key>DTXcodeBuild</key>
 	<string>13C100</string>
-	<key>GIT COMMIT HASH</key>
-	<string>2e43c60</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>NVHDAEnabler</key>
@@ -67,8 +65,6 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>as.vit9696.WhateverGreen</string>
-			<key>GITCOMMITHASH</key>
-			<string>2e43c60</string>
 			<key>IOClass</key>
 			<string>WhateverGreen</string>
 			<key>IOMatchCategory</key>

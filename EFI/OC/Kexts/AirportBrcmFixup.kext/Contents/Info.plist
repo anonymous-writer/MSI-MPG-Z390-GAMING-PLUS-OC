@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>21D49</string>
+	<string>20G527</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -42,8 +42,6 @@
 	<string>1321</string>
 	<key>DTXcodeBuild</key>
 	<string>13C100</string>
-	<key>GIT COMMIT HASH</key>
-	<string>7211f45</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>as.lvs1974.AirportBrcmFixup</key>
