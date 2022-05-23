@@ -981,8 +981,10 @@
 			<dict>
 				<key>SystemAudioVolume</key>
 				<data>JQ==</data>
-				<key>boot-args</key>
+				<key>#boot-args</key>
 				<string>agdpmod=vit9696</string>
+				<key>boot-args</key>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
