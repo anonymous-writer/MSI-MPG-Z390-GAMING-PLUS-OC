@@ -270,7 +270,7 @@
 			<key>AllowRelocationBlock</key>
 			<false/>
 			<key>AvoidRuntimeDefrag</key>
-			<false/>
+			<true/>
 			<key>DevirtualiseMmio</key>
 			<false/>
 			<key>DisableSingleUser</key>
@@ -332,9 +332,9 @@
 				<string>ATY,Orinoco</string>
 				<key>#CFG_FB_LIMIT</key>
 				<data>Aw==</data>
-				<key>#model</key>
-				<string>AMD Radeon Pro 560</string>
-				<key>#name</key>
+				<key>model</key>
+				<string>Sapphire Radeon RX 560 Pulse</string>
+				<key>name</key>
 				<string>AMD Radeon Pro 560</string>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,1,0/0,0</string>
@@ -346,6 +346,8 @@
 				<string>GPU</string>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
+				<key>agdpmod</key>
+				<string>vit9696</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict>
@@ -822,12 +824,8 @@
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
-			<key>AllowNvramReset</key>
-			<true/>
+			<string>Default</string>
 			<key>AllowSetDefault</key>
-			<true/>
-			<key>AllowToggleSip</key>
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
@@ -847,6 +845,8 @@
 			<data></data>
 			<key>ScanPolicy</key>
 			<integer>3081987</integer>
+			<key>##Vault</key>
+			<string>Secure</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -982,9 +982,9 @@
 				<key>SystemAudioVolume</key>
 				<data>JQ==</data>
 				<key>#boot-args</key>
-				<string>agdpmod=vit9696</string>
+				<string>agdpmod=vit9696 -lilubetaall</string>
 				<key>boot-args</key>
-				<string></string>
+				<string>agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
