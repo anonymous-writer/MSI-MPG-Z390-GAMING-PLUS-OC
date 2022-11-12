@@ -102,6 +102,14 @@
 				<key>Path</key>
 				<string>SSDT-USB.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>For solving instant wake by hooking GPRW or UPRW</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-GPRW.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -241,6 +249,36 @@
 				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>rename Method(GPRW,2,N) to XPRW</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>R1BSVwI=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFBSVwI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -823,7 +861,7 @@
 		<dict>
 			<key>ApECID</key>
 			<integer>0</integer>
-			<key>SecureBootModel</key>
+			<key>##SecureBootModel</key>
 			<string>Default</string>
 			<key>AllowSetDefault</key>
 			<true/>
@@ -845,6 +883,8 @@
 			<data></data>
 			<key>ScanPolicy</key>
 			<integer>3081987</integer>
+			<key>SecureBootModel</key>
+			<string>j137</string>
 			<key>##Vault</key>
 			<string>Secure</string>
 			<key>Vault</key>
@@ -874,6 +914,8 @@
 				<string>ResetSystem.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -894,6 +936,8 @@
 				<string>OpenShell.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -914,6 +958,8 @@
 				<string>CleanNvram.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -934,6 +980,8 @@
 				<string>VerifyMsrE2.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -954,6 +1002,8 @@
 				<string>grub_setup_var.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>FullNvramAccess</key>
+				<false/>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1014,8 +1064,6 @@
 				<string>fmm-computer-name</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -1163,6 +1211,8 @@
 				<string>HfsPlus.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
@@ -1173,6 +1223,8 @@
 				<string>CrScreenshotDxe.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
@@ -1183,6 +1235,8 @@
 				<string>OpenRuntime.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
@@ -1193,6 +1247,8 @@
 				<string>AudioDxe.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
@@ -1203,6 +1259,8 @@
 				<string>OpenCanopy.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
