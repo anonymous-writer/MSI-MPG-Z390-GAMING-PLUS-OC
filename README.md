@@ -4,5 +4,5 @@
 Opencore EFI-Folder for Start Catalina
 https://github.com/acidanthera/OpenCorePkg
 
-Information and questions if necessary can be asked here
+Information and questions can be asked here
 https://www.root86.com/collections/item/326-msi-mpg-z390-gaming-plus/
