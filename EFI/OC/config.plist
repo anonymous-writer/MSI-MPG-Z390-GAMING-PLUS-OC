@@ -110,6 +110,14 @@
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add missing DMAC device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DMAC.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -353,13 +361,13 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
+				<key>##AAPL,slot-name</key>
 				<string>Internal@0,28,6/0,0</string>
-				<key>device_type</key>
+				<key>##device_type</key>
 				<string>Network controller</string>
-				<key>model</key>
+				<key>##model</key>
 				<string>FENVI FW-T919</string>
-				<key>#brcmfx-aspm</key>
+				<key>##brcmfx-aspm</key>
 				<integer>102</integer>
 				<key>brcmfx-country</key>
 				<string>DE</string>
@@ -387,7 +395,7 @@
 				<key>agdpmod</key>
 				<string>vit9696</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
+			<key>##PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,1,0/0,1</string>
@@ -396,7 +404,7 @@
 				<key>model</key>
 				<string>Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X]</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<key>##PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,20,0</string>
@@ -405,7 +413,7 @@
 				<key>model</key>
 				<string>Cannon Lake PCH USB 3.1 xHCI Host Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<key>##PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
 				<key>####compatible</key>
 				<string>IMEI</string>
@@ -416,7 +424,7 @@
 				<key>model</key>
 				<string>Cannon Lake PCH HECI Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+			<key>##PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,23,0</string>
@@ -425,25 +433,25 @@
 				<key>model</key>
 				<string>Cannon Lake PCH SATA AHCI Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<key>##PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
+				<key>##AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
-				<key>device_type</key>
+				<key>##device_type</key>
 				<string>High Definition Audio</string>
-				<key>hda-gfx</key>
+				<key>##hda-gfx</key>
 				<string>onboard-2</string>
 				<key>layout-id</key>
 				<data>AgAAAA==</data>
-				<key>model</key>
+				<key>##model</key>
 				<string>Cannon Lake PCH cAVS</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x6)</key>
+			<key>##PciRoot(0x0)/Pci(0x1f,0x6)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,6</string>
@@ -701,6 +709,42 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -789,7 +833,9 @@
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
-			<string>None</string>
+			<string>NVRAM</string>
+			<key>HibernateSkipsPicker</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>LauncherOption</key>
@@ -805,7 +851,7 @@
 			<key>#PickerMode</key>
 			<string>Builtin</string>
 			<key>PickerVariant</key>
-			<string>hackintosh-forum.de</string>
+			<string>anonymous_writer</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -842,29 +888,31 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
-				<string>Clover Bootloader</string>
+				<string>Windows 11</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Flavour</key>
-				<string>Auto</string>
+				<string>Windows11:Windows</string>
 				<key>Name</key>
-				<string>Clover Bootloader</string>
+				<string>Windows 11</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x1,0xFFFF,0x0)/HD(3,GPT,6159FA06-112A-45E2-A407-D8FC4A831AF6,0xE8A20000,0xFA000)/\EFI\BOOT\BOOTX64.EFI</string>
+				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,34-35-04-C0-2C-A7-79-64)/HD(1,GPT,C572FBF1-CAE1-477C-9258-E867CE1D707D,0x3B641000,0x1F2800)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 				<key>TextMode</key>
 				<false/>
 			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>ApECID</key>
+			<key>##ApECID</key>
 			<integer>0</integer>
 			<key>##SecureBootModel</key>
 			<string>Default</string>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>8763324720970791111</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
@@ -882,9 +930,9 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>3081987</integer>
+			<integer>2622211</integer>
 			<key>SecureBootModel</key>
-			<string>j137</string>
+			<string>j185</string>
 			<key>##Vault</key>
 			<string>Secure</string>
 			<key>Vault</key>
@@ -1034,7 +1082,7 @@
 				<key>#boot-args</key>
 				<string>agdpmod=vit9696 -lilubetaall</string>
 				<key>boot-args</key>
-				<string>agdpmod=vit9696</string>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1162,6 +1210,12 @@
 			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>50</integer>
+			<key>PointerDwellClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellDoubleClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellRadius</key>
+			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
 			<key>PointerPollMask</key>
@@ -1390,7 +1444,20 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Address</key>
+				<integer>569344</integer>
+				<key>Comment</key>
+				<string>Fix Hibernation Mode 25</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Size</key>
+				<integer>4096</integer>
+				<key>Type</key>
+				<string>RuntimeCode</string>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>
