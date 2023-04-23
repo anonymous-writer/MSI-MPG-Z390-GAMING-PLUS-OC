@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22D49</string>
+	<string>22D68</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -42,8 +42,6 @@
 	<string>1420</string>
 	<key>DTXcodeBuild</key>
 	<string>14C18</string>
-	<key>GitCommitHash</key>
-	<string>1582768</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>IntelMausi</key>

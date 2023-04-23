@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#Info 1</key>
-	<string>Description Hackintosh settings</string>
-	<key>#Info 2</key>
-	<string>https://www.hackintosh-forum.de/forum/thread/44970-cannon-lake-sammelthread-lauff%C3%A4hige-konfigurationen-desktop/?postID=542186#post542186</string>
-	<key>#Motherboard Type 1</key>
-	<string>MSI MPG Z390 Gaming Plus</string>
-	<key>#Motherboard Type 2</key>
-	<string>MSI MPG Z390 Gaming Pro Carbon AC</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -118,6 +110,14 @@
 				<key>Path</key>
 				<string>SSDT-DMAC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix DMAR Table</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>DMAR.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -134,6 +134,20 @@
 				<integer>12238</integer>
 				<key>TableSignature</key>
 				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>All</key>
+				<false/>
+				<key>Comment</key>
+				<string>Delete standard DMAR table</string>
+				<key>Enabled</key>
+				<true/>
+				<key>OemTableId</key>
+				<data></data>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RE1BUg==</data>
 			</dict>
 		</array>
 		<key>Patch</key>
@@ -359,42 +373,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>##AAPL,slot-name</key>
-				<string>Internal@0,28,6/0,0</string>
-				<key>##device_type</key>
-				<string>Network controller</string>
-				<key>##model</key>
-				<string>FENVI FW-T919</string>
-				<key>##brcmfx-aspm</key>
-				<integer>102</integer>
-				<key>brcmfx-country</key>
-				<string>DE</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>#@0,name</key>
-				<string>ATY,Orinoco</string>
-				<key>#CFG_FB_LIMIT</key>
-				<data>Aw==</data>
-				<key>model</key>
-				<string>Sapphire Radeon RX 560 Pulse</string>
-				<key>name</key>
-				<string>AMD Radeon Pro 560</string>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,0/0,0</string>
-				<key>connector-count</key>
-				<data>AwAAAA==</data>
-				<key>connector-priority</key>
-				<data>AgYD</data>
-				<key>device_type</key>
-				<string>GPU</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>agdpmod</key>
-				<string>vit9696</string>
-			</dict>
 			<key>##PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -438,19 +416,6 @@
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>##AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
-				<key>##device_type</key>
-				<string>High Definition Audio</string>
-				<key>##hda-gfx</key>
-				<string>onboard-2</string>
-				<key>layout-id</key>
-				<data>AgAAAA==</data>
-				<key>##model</key>
-				<string>Cannon Lake PCH cAVS</string>
-			</dict>
 			<key>##PciRoot(0x0)/Pci(0x1f,0x6)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -459,6 +424,57 @@
 				<string>Ethernet controller</string>
 				<key>model</key>
 				<string>Ethernet Connection (7) I219-V</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#@0,name</key>
+				<string>ATY,Orinoco</string>
+				<key>#CFG_FB_LIMIT</key>
+				<data>Aw==</data>
+				<key>##AAPL,slot-name</key>
+				<string>Internal@0,1,0/0,0</string>
+				<key>agdpmod</key>
+				<string>vit9696</string>
+				<key>enable-hdmi20	</key>
+				<data>AQAAAA==</data>
+				<key>##connector-count</key>
+				<data>AwAAAA==</data>
+				<key>##connector-priority</key>
+				<data>AgYD</data>
+				<key>##device_type</key>
+				<string>GPU</string>
+				<key>##hda-gfx</key>
+				<string>onboard-1</string>
+				<key>##model</key>
+				<string>Sapphire Radeon RX 560 Pulse</string>
+				<key>##name</key>
+				<string>AMD Radeon Pro 560</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>##AAPL,slot-name</key>
+				<string>Internal@0,28,6/0,0</string>
+				<key>brcmfx-aspm</key>
+				<integer>3</integer>
+				<key>##device_type</key>
+				<string>Network controller</string>
+				<key>##model</key>
+				<string>FENVI FW-T919</string>
+				<key>brcmfx-country</key>
+				<string>DE</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>##AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>##device_type</key>
+				<string>High Definition Audio</string>
+				<key>##hda-gfx</key>
+				<string>onboard-2</string>
+				<key>##model</key>
+				<string>Cannon Lake PCH cAVS</string>
+				<key>layout-id</key>
+				<data>AgAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -717,7 +733,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HibernationFixup</string>
 				<key>MaxKernel</key>
@@ -738,6 +754,24 @@
 				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -780,6 +814,8 @@
 			<key>CustomSMBIOSGuid</key>
 			<true/>
 			<key>DisableIoMapper</key>
+			<false/>
+			<key>DisableIoMapperMapping</key>
 			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
@@ -830,6 +866,8 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>#PickerMode</key>
+			<string>Builtin</string>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
@@ -848,8 +886,6 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
-			<key>#PickerMode</key>
-			<string>Builtin</string>
 			<key>PickerVariant</key>
 			<string>anonymous_writer</string>
 			<key>PollAppleHotKeys</key>
@@ -863,6 +899,8 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>#Ausgabe-in-Datei-mit Debug-OV-Version#Target</key>
+			<integer>67</integer>
 			<key>AppleDebug</key>
 			<false/>
 			<key>ApplePanic</key>
@@ -879,8 +917,6 @@
 			<false/>
 			<key>Target</key>
 			<integer>3</integer>
-			<key>#Ausgabe-in-Datei-mit Debug-OV-Version#Target</key>
-			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -898,21 +934,21 @@
 				<key>Name</key>
 				<string>Windows 11</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,34-35-04-C0-2C-A7-79-64)/HD(1,GPT,C572FBF1-CAE1-477C-9258-E867CE1D707D,0x3B641000,0x1F2800)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,34-35-04-C0-2C-A7-79-64)/HD(4,GPT,C572FBF1-CAE1-477C-9258-E867CE1D707D,0x3B641000,0x1F2800)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 				<key>TextMode</key>
 				<false/>
 			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>##ApECID</key>
+			<key>ApECID</key>
 			<integer>0</integer>
-			<key>##SecureBootModel</key>
+			<key>SecureBootModel</key>
 			<string>Default</string>
+			<key>##Vault</key>
+			<string>Secure</string>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>ApECID</key>
-			<integer>8763324720970791111</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
@@ -931,10 +967,6 @@
 			<data></data>
 			<key>ScanPolicy</key>
 			<integer>2622211</integer>
-			<key>SecureBootModel</key>
-			<string>j185</string>
-			<key>##Vault</key>
-			<string>Secure</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -956,14 +988,14 @@
 				<string>ResetSystem Audio</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Name</key>
-				<string>ResetSystem Audio</string>
-				<key>Path</key>
-				<string>ResetSystem.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
 				<key>FullNvramAccess</key>
 				<false/>
+				<key>Name</key>
+				<string>ResetSystem Audio</string>
+				<key>Path</key>
+				<string>ResetSystem.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -978,14 +1010,14 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Name</key>
-				<string>UEFI Shell</string>
-				<key>Path</key>
-				<string>OpenShell.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
 				<key>FullNvramAccess</key>
 				<false/>
+				<key>Name</key>
+				<string>UEFI Shell</string>
+				<key>Path</key>
+				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1000,14 +1032,14 @@
 				<string>CleanNvram</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Name</key>
-				<string>CleanNvram</string>
-				<key>Path</key>
-				<string>CleanNvram.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
 				<key>FullNvramAccess</key>
 				<false/>
+				<key>Name</key>
+				<string>CleanNvram</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1022,14 +1054,14 @@
 				<string>MsrE2 write Test utility</string>
 				<key>Enabled</key>
 				<false/>
-				<key>Name</key>
-				<string>VerifyMsrE2</string>
-				<key>Path</key>
-				<string>VerifyMsrE2.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
 				<key>FullNvramAccess</key>
 				<false/>
+				<key>Name</key>
+				<string>VerifyMsrE2</string>
+				<key>Path</key>
+				<string>VerifyMsrE2.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1044,14 +1076,14 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
-				<key>Name</key>
-				<string>UEFI Grub Setup Var</string>
-				<key>Path</key>
-				<string>grub_setup_var.efi</string>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
 				<key>FullNvramAccess</key>
 				<false/>
+				<key>Name</key>
+				<string>UEFI Grub Setup Var</string>
+				<key>Path</key>
+				<string>grub_setup_var.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1065,32 +1097,45 @@
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
-				<key>DefaultBackgroundColor</key>
-				<data>AAAAAA==</data>
 				<key>#UIScale</key>
 				<data>AQ==</data>
+				<key>DefaultBackgroundColor</key>
+				<data>AAAAAA==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>revcpu</key>
+				<integer>1</integer>
+				<key>revcpuname</key>
+				<string>Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz</string>
 				<key>rtc-blacklist</key>
 				<data></data>
 			</dict>
+			<key>E09B9297-7928-4440-9AAB-D1F8536FBF0A</key>
+			<dict>
+				<key>hbfx-ahbm</key>
+				<integer>1</integer>
+				<key>hbfx-disable-patch-pci</key>
+				<true/>
+				<key>hbfx-dump-nvram</key>
+				<false/>
+			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>SystemAudioVolume</key>
-				<data>JQ==</data>
 				<key>#boot-args</key>
 				<string>agdpmod=vit9696 -lilubetaall</string>
+				<key>SystemAudioVolume</key>
+				<data>JQ==</data>
 				<key>boot-args</key>
 				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
+				<key>fmm-computer-name</key>
+				<string>iMac-Pro-Micha</string>
 				<key>prev-lang:kbd</key>
 				<data>ZGUtREU6Mw==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
-				<key>fmm-computer-name</key>
-				<string>iMac-Pro-Micha</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1105,6 +1150,14 @@
 			<array>
 				<string>rtc-blacklist</string>
 				<string>opencore-version</string>
+				<string>revcpu</string>
+				<string>revcpuname</string>
+			</array>
+			<key>E09B9297-7928-4440-9AAB-D1F8536FBF0A</key>
+			<array>
+				<string>hbfx-ahbm</string>
+				<string>hbfx-disable-patch-pci</string>
+				<string>hbfx-dump-nvram</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -1208,24 +1261,24 @@
 			<string>Builtin</string>
 			<key>CustomDelays</key>
 			<false/>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 			<key>KeyInitialDelay</key>
 			<integer>50</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
 			<key>PointerDwellClickTimeout</key>
 			<integer>0</integer>
 			<key>PointerDwellDoubleClickTimeout</key>
 			<integer>0</integer>
 			<key>PointerDwellRadius</key>
 			<integer>0</integer>
-			<key>KeySubsequentDelay</key>
-			<integer>5</integer>
 			<key>PointerPollMask</key>
 			<integer>-1</integer>
 			<key>PointerPollMax</key>
 			<integer>80</integer>
 			<key>PointerPollMin</key>
 			<integer>10</integer>
-			<key>GraphicsInputMirroring</key>
-			<true/>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1261,64 +1314,64 @@
 		<key>Drivers</key>
 		<array>
 			<dict>
-				<key>Path</key>
-				<string>HfsPlus.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>HFS+ Driver</string>
-			</dict>
-			<dict>
-				<key>Path</key>
-				<string>CrScreenshotDxe.efi</string>
 				<key>Enabled</key>
 				<true/>
 				<key>LoadEarly</key>
 				<false/>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>F10 Screenshot</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>CrScreenshotDxe.efi</string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>HFS+ Driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>HFS+ Driver</string>
-			</dict>
-			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
 				<key>Path</key>
 				<string>AudioDxe.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>HFS+ Driver</string>
 			</dict>
 			<dict>
-				<key>Path</key>
-				<string>OpenCanopy.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>HFS+ Driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -1349,6 +1402,8 @@
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>ForceResolution</key>
+			<false/>
+			<key>GopBurstMode</key>
 			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
@@ -1424,9 +1479,9 @@
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
-			<key>ForgeUefiSupport</key>
-			<false/>
 			<key>ForceOcWriteFlash</key>
+			<false/>
+			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
@@ -1438,6 +1493,8 @@
 			<true/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
@@ -1459,5 +1516,13 @@
 			</dict>
 		</array>
 	</dict>
+	<key>#Info 1</key>
+	<string>Description Hackintosh settings</string>
+	<key>#Info 2</key>
+	<string>https://www.hackintosh-forum.de/forum/thread/44970-cannon-lake-sammelthread-lauff%C3%A4hige-konfigurationen-desktop/?postID=542186#post542186</string>
+	<key>#Motherboard Type 1</key>
+	<string>MSI MPG Z390 Gaming Plus</string>
+	<key>#Motherboard Type 2</key>
+	<string>MSI MPG Z390 Gaming Pro Carbon AC</string>
 </dict>
 </plist>
