@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>#Info 1</key>
+	<string>Description Hackintosh settings</string>
+	<key>#Info 2</key>
+	<string>https://www.hackintosh-forum.de/forum/thread/44970-cannon-lake-sammelthread-lauff%C3%A4hige-konfigurationen-desktop/?postID=542186#post542186</string>
+	<key>#Motherboard Type 1</key>
+	<string>MSI MPG Z390 Gaming Plus</string>
+	<key>#Motherboard Type 2</key>
+	<string>MSI MPG Z390 Gaming Pro Carbon AC</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -88,11 +96,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-USB</string>
+				<string>SSDT-USB-MSI-Z390</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USB.aml</string>
+				<string>SSDT-USB-MSI-Z390.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -129,7 +137,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>OemTableId</key>
-				<data>AA==</data>
+				<data>eGhfY2ZzZDQ=</data>
 				<key>TableLength</key>
 				<integer>12238</integer>
 				<key>TableSignature</key>
@@ -143,9 +151,9 @@
 				<key>Enabled</key>
 				<true/>
 				<key>OemTableId</key>
-				<data></data>
+				<data>RURLMiAgICA=</data>
 				<key>TableLength</key>
-				<integer>0</integer>
+				<integer>112</integer>
 				<key>TableSignature</key>
 				<data>RE1BUg==</data>
 			</dict>
@@ -162,7 +170,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>U0FUMA==</data>
 				<key>Limit</key>
@@ -192,7 +200,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>SERBUw==</data>
 				<key>Limit</key>
@@ -252,7 +260,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>X1BUUwE=</data>
 				<key>Limit</key>
@@ -366,7 +374,7 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -427,52 +435,71 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>#@0,name</key>
-				<string>ATY,Orinoco</string>
-				<key>#CFG_FB_LIMIT</key>
-				<data>Aw==</data>
-				<key>##AAPL,slot-name</key>
-				<string>Internal@0,1,0/0,0</string>
-				<key>agdpmod</key>
-				<string>vit9696</string>
-				<key>enable-hdmi20	</key>
+				<key>##@0,AAPL,boot-display</key>
 				<data>AQAAAA==</data>
-				<key>##connector-count</key>
-				<data>AwAAAA==</data>
-				<key>##connector-priority</key>
-				<data>AgYD</data>
-				<key>##device_type</key>
-				<string>GPU</string>
+				<key>##agdpmod</key>
+				<string>pikera</string>
 				<key>##hda-gfx</key>
 				<string>onboard-1</string>
 				<key>##model</key>
-				<string>Sapphire Radeon RX 560 Pulse</string>
-				<key>##name</key>
-				<string>AMD Radeon Pro 560</string>
+				<string>Asus Radeon RX 570 Expedition OC</string>
+				<key>##pci-aspm-default</key>
+				<data>AwEAAA==</data>
+				<key>##shiki-id</key>
+				<string>Mac-7BA5B2D9E42DDD94</string>
+				<key>#shikigva</key>
+				<integer>80</integer>
+				<key>#unfairgva</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,0/0,0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>##AAPL,slot-name</key>
+				<key>AAPL,slot-name</key>
 				<string>Internal@0,28,6/0,0</string>
-				<key>brcmfx-aspm</key>
-				<integer>3</integer>
-				<key>##device_type</key>
+				<key>device_type</key>
 				<string>Network controller</string>
-				<key>##model</key>
+				<key>model</key>
 				<string>FENVI FW-T919</string>
+				<key>#brcmfx-aspm</key>
+				<integer>102</integer>
+				<key>brcmfx-country</key>
+				<string>DE</string>
+			</dict>
+			<key>##PciRoot(0x0)/Pci(0x1C,0x6)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>name</key>
+				<string>AirPort Extreme Wireless Network Adapter</string>
+				<key>model</key>
+				<string>AirPort Extreme Wireless Network Adapter (Broadcom BCM4377b 802.11ac Gigabit WiFi Adapter| MIMO 3x3 | 1300 MB/s)</string>
+				<key>device_type</key>
+				<string>Network Controller</string>
+				<key>subsystem-id</key>
+				<data>vwcAAA==</data>
+				<key>subsystem-vendor-id</key>
+				<data>axAAAA==</data>
+				<key>device-id</key>
+				<data>iEQAAA==</data>
+				<key>vendor-id</key>
+				<data>5BQAAA==</data>
+				<key>compatible</key>
+				<string>pci14e4,4488</string>
 				<key>brcmfx-country</key>
 				<string>DE</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>##AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
 				<key>##device_type</key>
 				<string>High Definition Audio</string>
 				<key>##hda-gfx</key>
 				<string>onboard-2</string>
 				<key>##model</key>
 				<string>Cannon Lake PCH cAVS</string>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
 				<key>layout-id</key>
 				<data>AgAAAA==</data>
 			</dict>
@@ -565,6 +592,78 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AMFIPass.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AMFIPass</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>AutoPkgInstaller.kext</string>
+				<key>Comment</key>
+				<string>Chainload OpenCore-Patcher installation</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AutoPkgInstaller</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>RSRHelper.kext</string>
+				<key>Comment</key>
+				<string>RSRHelper</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RSRHelper</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
@@ -596,24 +695,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string>12.0.0</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportBrcmFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -765,13 +846,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>RestrictEvents.kext</string>
+				<string>RadeonSensor.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RestrictEvents</string>
+				<string>Contents/MacOS/RadeonSensor</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -779,9 +860,134 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>SMCRadeonGPU.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMCRadeonGPU</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IOSkywalkFamily.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IOSkywalkFamily</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IO80211FamilyLegacy.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IO80211FamilyLegacy</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirPortBrcmNIC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>Sonoma-AirportItlwm.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Comment</key>
+				<string>Block IOSkywalkFamily kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Identifier</key>
+				<string>com.apple.iokit.IOSkywalkFamily</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>Strategy</key>
+				<string>Exclude</string>
+			</dict>
+		</array>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -798,7 +1004,98 @@
 		<key>Force</key>
 		<array/>
 		<key>Patch</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_apfs_filevault_allowed</string>
+				<key>Comment</key>
+				<string>Force FileVault on Broken Seal</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>com.apple.filesystems.apfs</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>Replace</key>
+				<data>uAEAAADD</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_cs_require_lv</string>
+				<key>Comment</key>
+				<string>Disable Library Validation Enforcement</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>Replace</key>
+				<data>uAAAAADD</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>__ZL22_vnode_check_signatureP5vnodeP5labeliP7cs_blobPjS5_ijPPcPm</string>
+				<key>Comment</key>
+				<string>Disable _csr_check() in _vnode_check_signature</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>AQAAAOgAAAAAhcB1</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleMobileFileIntegrity</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>//////8AAAAA////</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.0.0</string>
+				<key>Replace</key>
+				<data>AQAAALgBAAAAhcB1</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -876,12 +1173,14 @@
 			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
-			<string>Disabled</string>
+			<string>Full</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>17</integer>
+			<integer>144</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
@@ -928,13 +1227,31 @@
 				<key>Comment</key>
 				<string>Windows 11</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Flavour</key>
 				<string>Windows11:Windows</string>
 				<key>Name</key>
 				<string>Windows 11</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,34-35-04-C0-2C-A7-79-64)/HD(4,GPT,C572FBF1-CAE1-477C-9258-E867CE1D707D,0x3B641000,0x1F2800)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+				<string>PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)/NVMe(0x1,60-8A-09-05-00-2E-E4-AC)/HD(1,GPT,98624429-22FC-4A03-BD5F-3BC37A5BD5DB,0x800,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string>Ubuntu</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Flavour</key>
+				<string>Ubuntu:Linux</string>
+				<key>Name</key>
+				<string>Ubuntu</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,27-DB-BB-46-4A-44-1B-00)/HD(3,GPT,B402917E-8654-4D9C-959D-3AB5B3186B67,0x2D880000,0x1F4000)/\EFI\ubuntu\grubx64.efi</string>
 				<key>TextMode</key>
 				<false/>
 			</dict>
@@ -943,8 +1260,6 @@
 		<dict>
 			<key>ApECID</key>
 			<integer>0</integer>
-			<key>SecureBootModel</key>
-			<string>Default</string>
 			<key>##Vault</key>
 			<string>Secure</string>
 			<key>AllowSetDefault</key>
@@ -966,7 +1281,11 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>2622211</integer>
+			<integer>2703107</integer>
+			<key>##SecureBootModel</key>
+			<string>j185</string>
+			<key>SecureBootModel</key>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1110,6 +1429,33 @@
 				<string>Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz</string>
 				<key>rtc-blacklist</key>
 				<data></data>
+				<key>OCLP-Settings</key>
+				<string> -allow_fv -allow_amfi</string>
+				<key>revpatch</key>
+				<string>sbvmm</string>
+			</dict>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<dict>
+				<key>####csr-active-config</key>
+				<data>/w8AAA==</data>
+				<key>###csr-active-config</key>
+				<data>AwgAAA==</data>
+				<key>##csr-active-config</key>
+				<data>AAAAAA==</data>
+				<key>csr-active-config</key>
+				<data>AggAAA==</data>
+				<key>SystemAudioVolume</key>
+				<data>JQ==</data>
+				<key>#boot-args</key>
+				<string>agdpmod=vit9696 -lilubetaall amfi_get_out_of_my_way=0x1 amfi=0x80 revpatch=sbvmm ipc_control_port_options=0 -amfipassbeta</string>
+				<key>boot-args</key>
+				<string></string>
+				<key>fmm-computer-name</key>
+				<string>iMac-Pro-Micha</string>
+				<key>prev-lang:kbd</key>
+				<data>ZGUtREU6Mw==</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 			<key>E09B9297-7928-4440-9AAB-D1F8536FBF0A</key>
 			<dict>
@@ -1119,23 +1465,6 @@
 				<true/>
 				<key>hbfx-dump-nvram</key>
 				<false/>
-			</dict>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<dict>
-				<key>#boot-args</key>
-				<string>agdpmod=vit9696 -lilubetaall</string>
-				<key>SystemAudioVolume</key>
-				<data>JQ==</data>
-				<key>boot-args</key>
-				<string></string>
-				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
-				<key>fmm-computer-name</key>
-				<string>iMac-Pro-Micha</string>
-				<key>prev-lang:kbd</key>
-				<data>ZGUtREU6Mw==</data>
-				<key>run-efi-updater</key>
-				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1153,16 +1482,17 @@
 				<string>revcpu</string>
 				<string>revcpuname</string>
 			</array>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<array>
+				<string>boot-args</string>
+				<string>csr-active-config</string>
+				<string>fmm-computer-name</string>
+			</array>
 			<key>E09B9297-7928-4440-9AAB-D1F8536FBF0A</key>
 			<array>
 				<string>hbfx-ahbm</string>
 				<string>hbfx-disable-patch-pci</string>
 				<string>hbfx-dump-nvram</string>
-			</array>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>boot-args</string>
-				<string>fmm-computer-name</string>
 			</array>
 		</dict>
 		<key>LegacyOverwrite</key>
@@ -1317,31 +1647,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HFS+ Driver</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Path</key>
-				<string>HfsPlus.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>F10 Screenshot</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Path</key>
-				<string>CrScreenshotDxe.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>HFS+ Driver</string>
+				<string>OpenCore plugin implementing OC_FIRMWARE_RUNTIME protocol.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>LoadEarly</key>
@@ -1353,7 +1659,55 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HFS+ Driver</string>
+				<string>Recommended. Proprietary HFS file system driver with bless support commonly found in Apple firmware</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>NTFS Driver from Clover Paket (RW)</string>
+				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenNtfsDxe.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Open source EXT4 file system driver, required for booting with OpenLinuxBoot from the file system most commonly used with Linux.</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>ext4_x64.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Proprietary ExFAT file system driver for Bootcamp support commonly found in Apple firmware.</string>
+				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>ExFatDxe.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string>--restore-nosnoop</string>
+				<key>Comment</key>
+				<string>UEFI firmware for most Intel and some other analog audio controllers</string>
 				<key>Enabled</key>
 				<true/>
 				<key>LoadEarly</key>
@@ -1365,13 +1719,49 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HFS+ Driver</string>
+				<string>OpenCore plugin implementing graphical interface.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string>flags=0x00002F8E</string>
+				<key>Comment</key>
+				<string>Linux Boot Loader mit deaktivierter ESP scan Flag</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenLinuxBoot.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>OpenCore plugin implementing OC_BOOT_ENTRY_PROTOCOL to add a configurable Reset NVRAM entry to the boot picker menu.</string>
+				<key>Enabled</key>
+				<false/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>ResetNvramEntry.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Screenshot making driver saving images to the root of OpenCore partition (ESP) or any avail- able writeable filesystem upon pressing F10</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>CrScreenshotDxe.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -1397,6 +1787,8 @@
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
+			<key>ConsoleFont</key>
+			<string></string>
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
@@ -1409,6 +1801,8 @@
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
@@ -1464,6 +1858,8 @@
 			<false/>
 			<key>OSInfo</key>
 			<false/>
+			<key>PciIo</key>
+			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
@@ -1495,6 +1891,8 @@
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
 			<false/>
+			<key>ShimRetainProtocol</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
@@ -1504,9 +1902,9 @@
 		<array>
 			<dict>
 				<key>Address</key>
-				<integer>569344</integer>
+				<integer>389120</integer>
 				<key>Comment</key>
-				<string>Fix Hibernation Mode 25</string>
+				<string>Fix Hibernation Mode 25 -MSI MPG Z390 Gaming Plus</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Size</key>
@@ -1516,13 +1914,5 @@
 			</dict>
 		</array>
 	</dict>
-	<key>#Info 1</key>
-	<string>Description Hackintosh settings</string>
-	<key>#Info 2</key>
-	<string>https://www.hackintosh-forum.de/forum/thread/44970-cannon-lake-sammelthread-lauff%C3%A4hige-konfigurationen-desktop/?postID=542186#post542186</string>
-	<key>#Motherboard Type 1</key>
-	<string>MSI MPG Z390 Gaming Plus</string>
-	<key>#Motherboard Type 2</key>
-	<string>MSI MPG Z390 Gaming Pro Carbon AC</string>
 </dict>
 </plist>

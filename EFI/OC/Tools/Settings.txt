@@ -1,0 +1,9 @@
+ASPM RP09:
+setup_var_cv PchSetup 0x144 0x4 0x1
+
+CFG Lock deaktivieren
+setup_var_cv CpuSetup 0x43 0x01 0x00    
+
+
+DVMT auf 160M
+setup_var_cv SaSetup 0xA4 0x01 0x5

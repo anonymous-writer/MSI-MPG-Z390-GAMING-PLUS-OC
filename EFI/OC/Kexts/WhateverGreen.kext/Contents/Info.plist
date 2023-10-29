@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>22E252</string>
+	<string>22F82</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.6.5</string>
+	<string>1.6.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.6.5</string>
+	<string>1.6.6</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -39,11 +39,11 @@
 	<key>DTSDKName</key>
 	<string>macosx13.3</string>
 	<key>DTXcode</key>
-	<string>1430</string>
+	<string>1431</string>
 	<key>DTXcodeBuild</key>
-	<string>14E222b</string>
+	<string>14E300c</string>
 	<key>GitCommitHash</key>
-	<string>d839cea</string>
+	<string>c7c8dc7</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>NVHDAEnabler</key>
@@ -68,7 +68,7 @@
 			<key>CFBundleIdentifier</key>
 			<string>as.vit9696.WhateverGreen</string>
 			<key>GitCommitHash</key>
-			<string>d839cea</string>
+			<string>c7c8dc7</string>
 			<key>IOClass</key>
 			<string>WhateverGreen</string>
 			<key>IOMatchCategory</key>
