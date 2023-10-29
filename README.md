@@ -6,3 +6,41 @@ https://github.com/acidanthera/OpenCorePkg
 
 Information and questions can be asked here
 https://www.root86.com/collections/item/326-msi-mpg-z390-gaming-plus/
+
+
+**Intel CoreI7-9700 Processor** <br />
+**AMD Radeon RX 570 ** <br />
+ <br />
+**EFI-Folder for MacOS Catalina to Sonoma** <br />
+Opencore Bootloader <br />
+https://github.com/acidanthera/OpenCorePkg <br />
+ <br />
+**Using of WiFi card to** <br />
+https://www.fenvi.com/product_detail_16.html <br />
+ <br />
+**For installing from an OSX boot stick please set in config.plist** <br />
+“SecureBootModel” to “Disabled” <br />
+ <br />
+**Works:** <br />
+<li> Intel Integrated Graphics  <br />
+<li> USB  <br />
+<li> Sleep <br />
+<li> WiFi BCM94360NG <br />
+<li> Speakers <br />
+<li> P2 Audio Jack w/ Microphone <br />
+<li> Integrated Microphone
+<li> Apple Services (iCloud, Apple Music, Apple TV, unlock with AppleWatch, others..) <br />
+<li> Bluetooth FV-919<br />
+<li> Hibernatemode 25 <br />
+<li> HDMI Port <br />
+<br />
+**Doesn't work:** <br />
+<br />
+**Pictures:** <br />
+<br />
+![Alt text](Pictures/Sonoma.png?raw=true "Previously")
+<br />
+![Alt text](Pictures/Startbildschierm.png?raw=true "Previously")
+<br />
+![Alt text](Pictures/USB-Ports.png?raw=true "Previously")
+<br />
