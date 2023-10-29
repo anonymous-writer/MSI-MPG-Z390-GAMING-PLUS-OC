@@ -25,10 +25,9 @@ https://www.fenvi.com/product_detail_16.html <br />
 <li> Intel Integrated Graphics  <br />
 <li> USB  <br />
 <li> Sleep <br />
-<li> WiFi BCM94360NG <br />
+<li> WiFi FV-919<br />
 <li> Speakers <br />
 <li> P2 Audio Jack w/ Microphone <br />
-<li> Integrated Microphone
 <li> Apple Services (iCloud, Apple Music, Apple TV, unlock with AppleWatch, others..) <br />
 <li> Bluetooth FV-919<br />
 <li> Hibernatemode 25 <br />
