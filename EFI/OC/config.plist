@@ -351,6 +351,8 @@
 			<false/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>FixupAppleEfiImages</key>
+			<false/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -1282,7 +1284,7 @@
 			<data></data>
 			<key>ScanPolicy</key>
 			<integer>2703107</integer>
-			<key>##SecureBootModel</key>
+			<key>#SecureBootModel</key>
 			<string>j185</string>
 			<key>SecureBootModel</key>
 			<string>Disabled</string>
@@ -1438,11 +1440,11 @@
 			<dict>
 				<key>####csr-active-config</key>
 				<data>/w8AAA==</data>
-				<key>###csr-active-config</key>
+				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>##csr-active-config</key>
 				<data>AAAAAA==</data>
-				<key>csr-active-config</key>
+				<key>#csr-active-config</key>
 				<data>AggAAA==</data>
 				<key>SystemAudioVolume</key>
 				<data>JQ==</data>
