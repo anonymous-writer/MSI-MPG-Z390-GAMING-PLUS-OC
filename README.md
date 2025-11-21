@@ -4,7 +4,7 @@
 **CPU:** Intel Core i7-9700 (Coffee Lake Refresh)  
 **iGPU:** Intel UHD Graphics 630  
 **dGPU:** AMD Radeon RX 570 (nativ unterstützt)  
-**EFI kompatibel mit:** macOS Catalina bis macOS 14 Tahoe  
+**EFI kompatibel mit:** macOS Catalina bis macOS Tahoe  
 *(Identische Funktion auf **MSI MPG Z390 Gaming Pro Carbon AC**)*
 
 ---
