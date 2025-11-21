@@ -37,9 +37,8 @@ https://www.fenvi.com/product_detail_16.html <br />
 <br />
 **Pictures:** <br />
 <br />
-![Alt text](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/blob/master/Pictures/Sonoma.png)
-<br />
-![Alt text](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/blob/master/Pictures/Startbildschierm.png)
-<br />
-![Alt text](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/blob/master/Pictures/USB-Ports.png)
-<br />
+![macOS Sonoma](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/raw/master/Pictures/Sonoma.png)
+ <br />
+![Boot Screen](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/raw/master/Pictures/Startbildschierm.png)
+ <br />
+![USB Ports](https://github.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/raw/master/Pictures/USB-Ports.png))
