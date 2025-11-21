@@ -37,9 +37,9 @@ https://www.fenvi.com/product_detail_16.html <br />
 <br />
 **Pictures:** <br />
 <br />
-![Alt text](/Pictures/Sonoma.png?raw=true "Previously")
+![Alt text](./Pictures/Sonoma.png?raw=true "Previously")
 <br />
-![Alt text](/Pictures/Startbildschierm.png?raw=true "Previously")
+![Alt text](./Pictures/Startbildschierm.png?raw=true "Previously")
 <br />
-![Alt text](/Pictures/USB-Ports.png?raw=true "Previously")
+![Alt text](./Pictures/USB-Ports.png?raw=true "Previously")
 <br />
