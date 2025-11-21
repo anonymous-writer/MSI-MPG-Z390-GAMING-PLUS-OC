@@ -1,41 +1,39 @@
-## MSI MPG Z390 GAMING PLUS with I7-9700 Prozessor
-## ( Works also for MSI MPG Z390 Gaming Pro Carbon AC )
+# MSI MPG Z390 GAMING PLUS mit Intel Core i7-9700  
+*(Funktioniert identisch auf MSI MPG Z390 Gaming Pro Carbon AC)*
 
-Opencore EFI-Folder for Start Catalina
-https://github.com/acidanthera/OpenCorePkg
+OpenCore EFI-Ordner für macOS Catalina bis Sonoma (getestet von Catalina bis macOS 14 Sonoma)
 
-Information and questions can be asked here
-https://www.root86.com/collections/item/326-msi-mpg-z390-gaming-plus/
+**OpenCore Version:** Aktuelle Acidanthera OpenCorePkg  
+→ https://github.com/acidanthera/OpenCorePkg
 
+Fragen & Support:  
+→ https://www.root86.com/collections/item/326-msi-mpg-z390-gaming-plus/
 
-### Intel CoreI7-9700 Processor
-AMD Radeon RX 570
- <br />
-### EFI-Folder for MacOS Catalina to Sonoma
-Opencore Bootloader <br />
-https://github.com/acidanthera/OpenCorePkg <br />
- <br />
-### Using of WiFi card to
-https://www.fenvi.com/product_detail_16.html <br />
- <br />
-### For installing from an OSX boot stick please set in config.plist
-“SecureBootModel” to “Disabled” <br />
- <br />
-### Works:
-<li> Intel Integrated Graphics  <br />
-<li> USB  <br />
-<li> Sleep <br />
-<li> WiFi FV-919<br />
-<li> Speakers <br />
-<li> P2 Audio Jack w/ Microphone <br />
-<li> Apple Services (iCloud, Apple Music, Apple TV, unlock with AppleWatch, others..) <br />
-<li> Bluetooth FV-919<br />
-<li> Hibernatemode 25 <br />
-<li> HDMI Port <br />
-<br />
-### Doesn't work: 
-<br />
-### Pictures: 
+## Hardware
+- Mainboard: MSI MPG Z390 GAMING PLUS  
+- CPU: Intel Core i7-9700 (Coffee Lake Refresh)  
+- iGPU: Intel UHD Graphics 630 (voll funktionsfähig)  
+- dGPU: AMD Radeon RX 570 (nativ unterstützt)  
+- WLAN/Bluetooth: Fenvi FV-T919 (BCM94360CD) → nativer AirDrop, Handoff, Continuity etc.
+
+## Was funktioniert (macOS Sonoma 14.x)
+- Intel UHD Graphics 630 (inkl. Hardwarebeschleunigung & Metal)
+- Alle USB-Ports (inkl. USB-C)
+- Sleep / Wake (inkl. Hibernatemode 25)
+- Audio (interne Lautsprecher + Front-Panel 3,5 mm Klinke mit Mikrofon)
+- HDMI-Ausgang (iGPU)
+- WLAN & Bluetooth (Fenvi FV-T919)
+- Alle Apple-Dienste (iMessage, FaceTime, iCloud, Unlock mit Apple Watch, Sidecar, AirDrop, Continuity, etc.)
+- iServices komplett ohne zusätzliche Fixes
+
+## Was nicht funktioniert
+- Onboard Intel WLAN/Bluetooth (wird durch Fenvi-Karte ersetzt)
+- DRM-Probleme bei Nutzung der RX 570 unter neueren macOS-Versionen nur mit WhateverGreen + Shiki-Bootflag (bei Bedarf)
+
+## Wichtige Hinweise für die Installation
+Bei der Installation von einem macOS-Installations-USB-Stick bitte in der `config.plist` folgendes setzen:  
+```xml
+Misc → Security → SecureBootModel → Disabled
 
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
 
