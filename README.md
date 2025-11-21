@@ -35,7 +35,7 @@ https://www.fenvi.com/product_detail_16.html <br />
 <br />
 **Doesn't work:** <br />
 <br />
-**Pictures:** <br />
+**Pictures:**
 <br />
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
 <br />
