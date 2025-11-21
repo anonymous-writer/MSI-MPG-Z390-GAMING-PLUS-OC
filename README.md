@@ -38,9 +38,9 @@ https://www.fenvi.com/product_detail_16.html <br />
 **Pictures:** <br />
 <br />
 <br />
-![Alt text](Pictures/Sonoma.png?raw=true "Previously")
+![macOS Sonoma Desktop](./Pictures/Sonoma.png?raw=true)
 <br />
-![Alt text](Pictures/Startbildschierm.png?raw=true "Previously")
+![macOS Sonoma Startbildschierm](./Pictures/Startbildschierm.png?raw=true)
 <br />
-![Alt text](Pictures/USB-Ports.png?raw=true "Previously")
+![macOS Sonoma USB-Ports](./Pictures/USB-Ports.png?raw=true)
 <br />
