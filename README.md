@@ -8,20 +8,20 @@ Information and questions can be asked here
 https://www.root86.com/collections/item/326-msi-mpg-z390-gaming-plus/
 
 
-**Intel CoreI7-9700 Processor** <br />
-**AMD Radeon RX 570 ** <br />
+### Intel CoreI7-9700 Processor
+AMD Radeon RX 570
  <br />
-**EFI-Folder for MacOS Catalina to Sonoma** <br />
+### EFI-Folder for MacOS Catalina to Sonoma
 Opencore Bootloader <br />
 https://github.com/acidanthera/OpenCorePkg <br />
  <br />
-**Using of WiFi card to** <br />
+### Using of WiFi card to
 https://www.fenvi.com/product_detail_16.html <br />
  <br />
-**For installing from an OSX boot stick please set in config.plist** <br />
+### For installing from an OSX boot stick please set in config.plist
 “SecureBootModel” to “Disabled” <br />
  <br />
-**Works:** <br />
+### Works:
 <li> Intel Integrated Graphics  <br />
 <li> USB  <br />
 <li> Sleep <br />
@@ -33,9 +33,9 @@ https://www.fenvi.com/product_detail_16.html <br />
 <li> Hibernatemode 25 <br />
 <li> HDMI Port <br />
 <br />
-**Doesn't work:** <br />
+### Doesn't work: 
 <br />
-**Pictures:** 
+### Pictures: 
 
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
 
