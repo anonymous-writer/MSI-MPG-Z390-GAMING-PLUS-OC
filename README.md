@@ -47,7 +47,7 @@ Misc → Security → SecureBootModel → Disabled
 
 ---
 ## 🖼️ Screenshots
-### macOS Sonoma Desktop
+### macOS Tahoe Desktop
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Tahoe.png)
 
 ### OpenCore Boot Picker
