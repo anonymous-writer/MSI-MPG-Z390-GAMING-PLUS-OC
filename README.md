@@ -1,10 +1,10 @@
-# MSI MPG Z390 GAMING PLUS – Hackintosh EFI (Catalina → Sonoma)
+# MSI MPG Z390 GAMING PLUS – Hackintosh EFI (Catalina → Tahoe)
 
 **Mainboard:** MSI MPG Z390 GAMING PLUS  
 **CPU:** Intel Core i7-9700 (Coffee Lake Refresh)  
 **iGPU:** Intel UHD Graphics 630  
 **dGPU:** AMD Radeon RX 570 (nativ unterstützt)  
-**EFI kompatibel mit:** macOS Catalina bis macOS 14 Sonoma  
+**EFI kompatibel mit:** macOS Catalina bis macOS 14 Tahoe  
 *(Identische Funktion auf **MSI MPG Z390 Gaming Pro Carbon AC**)*
 
 ---
@@ -48,7 +48,7 @@ Misc → Security → SecureBootModel → Disabled
 ---
 ## 🖼️ Screenshots
 ### macOS Sonoma Desktop
-![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
+![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Tahoe.png)
 
 ### OpenCore Boot Picker
 ![macOS Sonoma Startbildschirm](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Startbildschierm.png)
