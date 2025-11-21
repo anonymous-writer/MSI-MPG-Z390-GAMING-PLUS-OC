@@ -37,11 +37,9 @@ https://www.fenvi.com/product_detail_16.html <br />
 <br />
 **Pictures:** <br />
 <br />
-<br />
-**Pictures:** 
-
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
-
+<br />
 ![macOS Sonoma Startbildschirm](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Startbildschierm.png)
-
+<br />
 ![macOS Sonoma USB-Ports](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/USB-Ports.png)
+<br />
