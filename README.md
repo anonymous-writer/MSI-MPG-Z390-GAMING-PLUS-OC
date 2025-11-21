@@ -32,7 +32,7 @@ Fragen & Support:
 
 ## Wichtige Hinweise für die Installation
 Bei der Installation von einem macOS-Installations-USB-Stick bitte in der `config.plist` folgendes setzen:  
-```xml
+
 Misc → Security → SecureBootModel → Disabled
 
 ![macOS Sonoma Desktop](https://raw.githubusercontent.com/anonymous-writer/MSI-MPG-Z390-GAMING-PLUS-OC/master/Pictures/Sonoma.png)
